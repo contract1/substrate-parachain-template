@@ -27,6 +27,7 @@ runtime-benchmarks = [
 try-runtime = ["parachain-template-runtime/try-runtime"]
 
 [dependencies]
+
 clap = { version = "3.1", features = ["derive"] }
 derive_more = "0.99.2"
 log = "0.4.14"
@@ -41,16 +42,17 @@ jsonrpc-core = "18.0.0"
 parachain-template-runtime = { path = "../runtime" }
 
 # Substrate Dependencies
+
 frame-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 try-runtime-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 
 pallet-transaction-payment-rpc = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
-
 substrate-frame-rpc-system = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 substrate-prometheus-endpoint = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 
 ## Substrate Client Dependencies
+
 sc-basic-authorship = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 sc-chain-spec = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 sc-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17", features = ["wasmtime"] }
@@ -68,6 +70,7 @@ sc-transaction-pool-api = { git = "https://github.com/paritytech/substrate", bra
 sc-tracing = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 
 ## Substrate Primitive Dependencies
+
 sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 sp-block-builder = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
@@ -83,6 +86,7 @@ sp-timestamp = { git = "https://github.com/paritytech/substrate", branch = "polk
 sp-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.17" }
 
 # Cumulus dependencies
+
 cumulus-client-cli = { git = "https://github.com/paritytech/cumulus", branch = "polkadot-v0.9.17" }
 cumulus-client-collator = { git = "https://github.com/paritytech/cumulus", branch = "polkadot-v0.9.17" }
 cumulus-client-consensus-aura = { git = "https://github.com/paritytech/cumulus", branch = "polkadot-v0.9.17" }
@@ -95,6 +99,7 @@ cumulus-relay-chain-interface = { git = "https://github.com/paritytech/cumulus",
 cumulus-relay-chain-local = { git = "https://github.com/paritytech/cumulus", branch = "polkadot-v0.9.17" }
 
 # Polkadot dependencies
+
 polkadot-cli = { git = "https://github.com/paritytech/polkadot", branch = "release-v0.9.17" }
 polkadot-parachain = { git = "https://github.com/paritytech/polkadot", branch = "release-v0.9.17" }
 polkadot-primitives = { git = "https://github.com/paritytech/polkadot", branch = "release-v0.9.17" }
